@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stock Dashboard</title>
+</head>
+<body>
+    <h1>Stock Dashboard</h1>
+    <ul>
+        {% for stock in stock_data %}
+        <li>{{ stock.symbol }}: ${{ stock.latest_price }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
